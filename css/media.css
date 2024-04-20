@@ -1,0 +1,42 @@
+@media (min-width:1200px) {
+    .container {
+        width: 1190px;
+        margin: auto;
+    }
+}
+@media (max-width:990px) {
+    .header h5{
+        padding-top: 40px;
+        font-size: 40px;
+    }
+
+    .header h1 {
+        padding-top: -10px;
+        font-size: 2rem;
+    }
+    
+    .about .second {
+        padding-top: 15%;
+    }
+    .header .nav-link::before {
+        background-color: #000000;
+        content: "";
+        transform: translateX(-50%);
+        position: absolute;  
+        height: 1.5px;
+        width: 1%;
+        left: 50%;
+        transition: 0.5s all;
+        visibility: none;
+    }
+
+    .nav-link:hover:before {
+        visibility: visible;
+        width: 10%;
+        left: 50%;
+    }
+
+    .header .nav-item{
+        text-align: center;
+    }
+}

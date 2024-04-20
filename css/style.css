@@ -1,0 +1,636 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.logo {
+    font-family: "Montserrat", sans-serif;
+}
+
+/* navbar */
+.nav-item {
+    position: relative;
+}
+
+.nav-link {
+    font-size: 14px;
+}
+
+.logo {
+    letter-spacing: 1px;
+    font-size: 18px;
+    font-weight: 800;
+    color: #1c1c1c;
+}
+
+.nav-link::before {
+    background-color: #111;
+    content: "";
+    transform: translateX(-50%);
+    position: absolute;
+    height: 1.5px;
+    width: 1%;
+    left: 1%;
+    top: 80%;
+    transition: 0.5s all;
+    visibility: hidden;
+}
+
+.nav-link:hover:before {
+    visibility: visible;
+    width: 80%;
+    left: 50%;
+}
+
+
+
+/* header */
+.header {
+    height: 100vh;
+    background-image: url(../imgs/bg.jpg);
+    background-size: cover;
+}
+
+.header .home-layer {
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.header .caption h5 {
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.header .caption h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.header .caption h1 span {
+    font-weight: 200;
+}
+
+.header .caption h1::after {
+    content: "";
+    animation: typing 6s infinite;
+}
+
+@keyframes typing {
+    0% {
+        content: "D|";
+    }
+
+    2% {
+        content: "De|";
+    }
+
+    3% {
+        content: "Dev|";
+    }
+
+    4% {
+        content: "Deve|";
+    }
+
+    5% {
+        content: "Devel|";
+    }
+
+    6% {
+        content: "Develo|";
+    }
+
+    7% {
+        content: "Develop|";
+    }
+
+    8% {
+        content: "Developr|";
+    }
+
+    9% {
+        content: "Develop|";
+    }
+
+    10% {
+        content: "Develo|";
+    }
+
+    11% {
+        content: "Devel|";
+    }
+
+    12% {
+        content: "Deve|";
+    }
+
+    13% {
+        content: "Dev|";
+    }
+
+    14% {
+        content: "De|";
+    }
+
+    16% {
+        content: "D|";
+    }
+
+    17% {
+        content: "De|";
+    }
+
+    18% {
+        content: "Des|";
+    }
+
+    19% {
+        content: "Desi|";
+    }
+
+    20% {
+        content: "Desig|";
+    }
+
+    21% {
+        content: "Design|";
+    }
+
+    22% {
+        content: "Designe|";
+    }
+
+    23% {
+        content: "Designer|";
+    }
+
+    24% {
+        content: "Designe|";
+    }
+
+    26% {
+        content: "Design|";
+    }
+
+    28% {
+        content: "Desig|";
+    }
+
+    29% {
+        content: "Desi|";
+    }
+
+    30% {
+        content: "Des|";
+    }
+
+    32% {
+        content: "De|";
+    }
+
+    34% {
+        content: "D|";
+    }
+
+    36% {
+        content: "|";
+    }
+
+    38% {
+        content: "L|";
+    }
+
+    40% {
+        content: "La|";
+    }
+
+    42% {
+        content: "Lar|";
+    }
+
+    43% {
+        content: "Larr|";
+    }
+
+    44% {
+        content: "Larry|";
+    }
+
+    46% {
+        content: "Larry D|";
+    }
+
+    48% {
+        content: "Larry Da|";
+    }
+
+    50% {
+        content: "Larry Dan|";
+    }
+
+    52% {
+        content: "Larry Dani|";
+    }
+
+    54% {
+        content: "Larry Danie|";
+    }
+
+    58% {
+        content: "Larry Daniel|";
+    }
+
+    60% {
+        content: "Larry Daniels|";
+    }
+
+    62% {
+        content: "Larry Daniel|";
+    }
+
+    64% {
+        content: "Larry Danie|";
+    }
+
+    66% {
+        content: "Larry Dani|";
+    }
+
+    68% {
+        content: "Larry Dan|";
+    }
+
+    70% {
+        content: "Larry Da|";
+    }
+
+    72% {
+        content: "Larry D|";
+    }
+
+    74% {
+        content: "Larry|";
+    }
+
+    76% {
+        content: "Larr|";
+    }
+
+    80% {
+        content: "Lar|";
+    }
+
+    83% {
+        content: "La|";
+    }
+
+    86% {
+        content: "L|";
+    }
+
+    89% {
+        content: "|";
+    }
+
+    100% {
+        content: "|";
+    }
+}
+
+/* about section */
+
+.about .first img {
+    width: 100%;
+    padding-left: 30px;
+}
+
+.about .first::after {
+    content: "";
+    background-image: url(../imgs/dots.png);
+    background-repeat: repeat;
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    bottom: -31px;
+    left: 0;
+    z-index: -2;
+}
+
+.about h3 {
+    font-size: 30px;
+}
+
+.about .second .note {
+    font-size: 14px;
+    color: #999;
+    letter-spacing: 2px;
+}
+
+.about .second .progress {
+    height: 1.7rem;
+    box-shadow: inset 0px 2px 7px rgba(0, 0, 0, 0.15);
+}
+
+.about .second .progress .progress-bar p {
+    font-size: 14px;
+
+}
+
+.home-icon i {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.about .second .buttons {
+    font-size: 12px;
+}
+
+.buttons .btn-1 {
+    background-color: black;
+    border: 1px solid black;
+    color: white;
+    transition: 1s all;
+}
+
+.buttons .btn-2 {
+    border: 1px solid black;
+    transition: 1s all;
+}
+
+.buttons .btn-1:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+.about .second .buttons .btn-2:hover {
+    background-color: black;
+    color: white;
+}
+
+/* title */
+.title {
+    text-align: center;
+}
+
+.title h3 {
+    font-size: 40px;
+    font-weight: 900;
+    position: relative;
+    z-index: 1;
+}
+
+.title h3::after {
+    content: "";
+    background-image: url(../imgs/dots.png);
+    background-repeat: repeat;
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+
+}
+
+/* services section */
+.services {
+    background-color: #f7f7f7;
+}
+
+.services .icon {
+    font-size: 25px;
+    padding: 25px;
+    border-radius: 50%;
+    background-color: #f4f4f4;
+    color: black;
+    margin: auto;
+    transition: 0.3s all;
+}
+
+.services h6 {
+    font-size: 18px;
+}
+
+.services .square:hover .icon {
+    background-color: black;
+    color: white;
+}
+
+.services .icon i {
+    color: red;
+}
+
+/* portofolio section */
+
+.work .content {
+    position: relative;
+    transition: 0.3s all;
+}
+
+.work .content .port-layer {
+    text-align: center;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    left: 5px;
+    bottom: 5px;
+    background-color: rgba(255, 255, 255, 0.8);
+    opacity: 0;
+}
+
+.work .content .port-layer h6 {
+    font-size: 12px;
+    font-weight: bold;
+    position: absolute;
+    top: 35%;
+    right: 40%;
+
+    transition: 0.5s all;
+}
+
+.work .content:hover .port-layer {
+    opacity: 1;
+}
+
+.work .content:hover .port-layer h6 {
+    top: 40%;
+}
+
+.work .content .port-layer .icon {
+    position: absolute;
+    top: 55%;
+    right: 40%;
+    transition: 0.5s all;
+}
+
+.work .content:hover .port-layer .icon {
+    top: 50%;
+}
+
+
+.work .content:hover .port-layer .icon .hov {
+    background-color: black;
+    color: white;
+    transition: 0.3s all;
+}
+
+.work .content .port-layer .icon:hover .hov {
+    background-color: white;
+    color: black;
+    border: 0.4px solid black;
+}
+
+.work .nav-item {
+    position: relative;
+}
+
+.work .nav-link {
+    font-size: 14px;
+}
+
+.work .nav-link::before {
+    background-color: #111;
+    content: "";
+    transform: translateX(-50%);
+    position: absolute;
+    height: 3px;
+    width: 1%;
+    left: 1%;
+    top: 80%;
+    transition: 0.5s all;
+    visibility: hidden;
+}
+
+.work .nav-link:hover::before {
+    visibility: visible;
+    width: 80%;
+    left: 50%;
+}
+
+/* client section */
+.client {
+    background-color: #f7f7f7;
+}
+
+.client img {
+    width: 12%;
+}
+
+.client span {
+    font-size: 12px;
+    color: #888;
+    letter-spacing: 0.3px;
+}
+
+.carousel-indicators [data-bs-target] {
+    height: 10px;
+    width: 10px;
+    margin: 5px;
+    background-color: #888;
+}
+
+
+/*information*/
+.show h3 {
+    font-weight: 900;
+}
+
+/* team section */
+.team {
+    background-color: #f7f7f7;
+}
+
+.team .card-body {
+    background-color: #343434cc;
+}
+
+.team .image {
+    position: relative;
+    overflow: hidden;
+}
+
+.team .image img {
+    transition: 0.4s all;
+}
+
+.team-layer {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.925);
+    top: 2%;
+    bottom: 2%;
+    right: 2%;
+    left: 2%;
+    transform: rotateY(180deg) scale(0.5, 0.5);
+    opacity: 0;
+    transition: 0.4s all;
+}
+
+.team .image:hover .team-layer {
+    transform: rotateY(360deg) scale(1, 1);
+    opacity: 1;
+}
+
+.team .team-layer .icon i:hover {
+    background-color: red;
+}
+
+.team .image:hover img {
+    transform: scale(1.2);
+}
+
+/* contact section*/
+.contact .square {
+    transition: 0.3s all;
+}
+
+.contact .icon {
+    background-color: #f4f4f4;
+    color: black;
+    padding: 20px;
+    border-radius: 50%;
+    transition: 0.3s all;
+
+}
+
+.contact .social:hover .icon {
+    background-color: #111;
+    color: white;
+}
+
+.form {
+    width: 85%;
+    margin: auto;
+}
+
+.contact .so {
+    width: 85%;
+    margin: auto;
+}
+
+.form input,
+.form textarea {
+    background-color: #f4f4f4;
+    border: 0;
+}
+
+.form textarea {
+    height: 140px;
+}
+
+.form .control:focus {
+    outline: none;
+}
+
+/* footer */
+.footer p {
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: #748182;
+}
